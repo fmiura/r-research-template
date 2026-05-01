@@ -120,6 +120,7 @@ Core principles:
 After creating a new project from this template:
 
 - rename the repository
+- delete `00_TemplateScript.r`
 - update `DESCRIPTION`
 - update author information
 - simplify structure if needed
