@@ -120,7 +120,40 @@ Core principles:
 After creating a new project from this template:
 
 - rename the repository
-- delete `00_TemplateScript.r`
-- update `DESCRIPTION`
+- rename the `.Rproj` file to match the repository name
+- delete `00_TemplateScript.r` (if present)
+- update `DESCRIPTION` (Package name, Title, etc.)
 - update author information
 - simplify structure if needed
+
+---
+
+## 9. Initial setup (recommended)
+
+### Step 1: Create a new repository from the template
+
+Using GitHub CLI:
+
+```bash
+cd ~/Projects
+
+gh repo create new-project-name \
+  --template fmiura/r-research-template \
+  --private \
+  --clone
+```
+
+### Step 2: Open in RStudio
+
+From R:
+
+```r
+rstudioapi::openProject("~/Projects/new-project-name")
+```
+
+Or from Terminal:
+
+```bash
+cd ~/Projects/new-project-name
+open -a RStudio .
+```
