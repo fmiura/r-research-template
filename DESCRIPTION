@@ -1,0 +1,9 @@
+Package: ResearchTemplateR
+Title: R Package and Quarto Research Compendium
+Version: 0.0.0.9000
+Authors@R: person("Fuminari", "Miura", email = "your.email@example.com", role = c("aut", "cre"))
+Description: A reproducible research project combining R package functions and Quarto reports.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

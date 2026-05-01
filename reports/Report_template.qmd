@@ -1,0 +1,46 @@
+---
+title: "r-research-template – Report"
+author: "Fuminari Miura"
+date: today
+output-dir: output
+format:
+  html:
+    self-contained: true
+    toc: true
+    toc-depth: 2
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+# Overview
+
+Briefly describe the research question, data, model, and main outputs.
+
+# Setup
+
+```{r}
+library(devtools)
+devtools::load_all('..')
+```
+
+# Analysis
+
+Add analysis here, or source scripts from `reports/scripts/`.
+
+```{r}
+# source('scripts/01_prepare_data.R')
+```
+
+# Results
+
+Figures should be saved to `reports/figures/`.
+
+Tables should be saved to `reports/tables/`.
+
+# Session information
+
+```{r}
+sessionInfo()
+```
